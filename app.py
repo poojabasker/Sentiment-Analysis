@@ -18,7 +18,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 
-def predict():
+def pred():
     data={"Text":"bad"}
     
     data=json.dumps(data)
