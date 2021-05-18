@@ -16,6 +16,24 @@ model.load_weights("model.h5")
 # app
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+
+def predict():
+    data={"Text":"bad"}
+    
+    data=json.dumps(data)
+
+    # predictions
+    result = cd.get_sentiment(model, data)
+    #result = json.dumps(result)
+
+    # send back to browser
+    output = result
+
+    # return data
+    #return data
+    return jsonify(result)
+
 # routes
 @app.route('/', methods=['POST'])
 
