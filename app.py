@@ -19,20 +19,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 
 def pred():
-    data={"Text":"bad"}
-    
-    data=json.dumps(data)
-
-    # predictions
-    result = cd.get_sentiment(model, data)
-    #result = json.dumps(result)
-
-    # send back to browser
-    output = result
-
-    # return data
-    #return data
-    return jsonify(result)
+   print("Hello World!")
 
 # routes
 @app.route('/', methods=['POST'])
