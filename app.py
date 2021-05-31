@@ -17,8 +17,11 @@ model.load_weights("model.h5")
 app = Flask(__name__)
 
 # routes
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['GET'])
+def home():
+    return ("Hello world!")
 
+@app.route('/predict', methods=['POST'])
 def predict():
     # get data
     data = request.get_json(force=True)
