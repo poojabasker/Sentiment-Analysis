@@ -16,11 +16,6 @@ model.load_weights("model.h5")
 # app
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
-
-def pred():
-   print("Hello World!")
-
 # routes
 @app.route('/', methods=['POST'])
 
