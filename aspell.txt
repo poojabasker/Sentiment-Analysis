@@ -185,6 +185,7 @@ foresee: forsee
 frustrating: frustartaion
 function: fuction
 generally: generly
+good: goo
 gotten: gotton
 government: goberment gobernement gobernment
 graceful: gracefull
