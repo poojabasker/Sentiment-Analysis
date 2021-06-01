@@ -1,4 +1,4 @@
-tensorflow-cpu
+tensorflow-cpu==2.3.2
 emoji==1.2.0
 Flask==1.1.2
 jsonify==0.5
