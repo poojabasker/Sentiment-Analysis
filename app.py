@@ -21,7 +21,7 @@ app = Flask(__name__)
 def home():
     return ("Hello world!")
 
-@app.route('/predict', methods=['POST'])
+@app.route('/', methods=['POST'])
 def predict():
     # get data
     data = request.get_json(force=True)
