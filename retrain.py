@@ -111,7 +111,7 @@ def get_sentiment():
 
     token = text.Tokenizer(num_words=None)
     max_len = 160
-    Epoch = 5
+    Epoch = 1
     token.fit_on_texts(list(X_train) + list(X_test))
     X_train_pad = sequence.pad_sequences(token.texts_to_sequences(X_train), maxlen=max_len)
     X_test_pad = sequence.pad_sequences(token.texts_to_sequences(X_test), maxlen=max_len)
