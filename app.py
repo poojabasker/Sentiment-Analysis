@@ -24,11 +24,6 @@ run_with_ngrok(app)
 def get():
     return("hello world")
 
-@app.route('/retrain', methods=['GET'])
-def retrain():
-    rt.get_sentiment()
-    return
-
 # routes
 @app.route('/predict', methods=['POST'])
 def predict():
