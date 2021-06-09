@@ -5,8 +5,6 @@ from keras.models import model_from_json, model_from_yaml
 import clean_data as cd
 import json
 import requests
-import retrain as rt
-#from flask_ngrok import run_with_ngrok
 
 yaml_file = open('model.yaml', 'r')
 loaded_model_yaml = yaml_file.read()
@@ -17,7 +15,6 @@ model.load_weights("model.h5")
 
 # app
 app = Flask(__name__)
-# run_with_ngrok(app)
 
 # routes
 @app.route('/', methods=['GET'])
