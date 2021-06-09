@@ -11,7 +11,7 @@ import retrain as rt
 yaml_file = open('model.yaml', 'r')
 loaded_model_yaml = yaml_file.read()
 yaml_file.close()
-model = model_from_yaml(loaded_model_yaml)
+model = model_f\rom_yaml(loaded_model_yaml)
 # load weights into new model
 model.load_weights("model.h5")
 
